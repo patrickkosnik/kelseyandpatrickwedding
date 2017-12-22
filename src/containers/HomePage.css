@@ -24,7 +24,7 @@
   color: #163241;
 }
 
-@media (min-width: 756px) {
+@media (min-width: 768px) {
   .app {
       background-position: 80% 10%;
   }
