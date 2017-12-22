@@ -1,0 +1,26 @@
+{
+  "guests": [
+    {
+      "id" : 1,
+      "firstName": "Patrick",
+      "lastName": "Kosnik",
+      "partnerFirst": "Kelsey",
+      "partnerLast": "Aiken",
+      "plusOnes": ["Desmond", "Bailey"]
+    },
+    {
+      "id" : 2,
+      "firstName": "Eric",
+      "lastName": "Dykema",
+      "partnerFirst": "Ashley",
+      "partnerLast": "Dykema",
+      "plusOnes" : []
+    },
+    {
+      "id" : 3,
+      "firstName": "Jon",
+      "lastName": "Wags",
+      "plusOnes" : []
+    }
+  ]
+}

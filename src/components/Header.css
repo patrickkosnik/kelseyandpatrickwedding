@@ -1,0 +1,49 @@
+.container {
+  margin: 0;
+  padding: 0;
+  /*background-color: #05263f;*/
+  /*background-color: #481423*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.container li {
+  display: inline-block;
+}
+
+.container li:hover {
+  border-bottom: 2px solid #481423;
+  color: #481423;
+}
+
+.container span {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  height: 30px;
+  width: 75px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.container ul {
+  padding: 0;
+}
+
+.container a {
+  font-family: 'Poiret One', arial;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.selected > span {
+  border-bottom: 2px solid #481423;
+}
+
+.container.light a {
+  color: #fff;
+}
