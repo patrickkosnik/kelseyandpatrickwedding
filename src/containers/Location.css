@@ -9,6 +9,10 @@
   background-position: right left;
 }
 
+.title .info {
+  padding-bottom: 32px;
+}
+
 .infoCard {
   width: 33%;
   min-width: 250px;
@@ -32,7 +36,7 @@
   color: #6B061F;
   font-size: 48px;
   padding: 20px 20px 0 20px;
-  margin-top: 20px;
+  margin: 16px 0;
 }
 
 .subheader {
@@ -44,6 +48,7 @@
 
 .info {
   padding-left: 20px;
+  padding-right: 20px;
   font-size: 20px;
   padding-bottom: 16px;
 }
