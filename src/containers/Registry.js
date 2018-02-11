@@ -10,7 +10,7 @@ const Registry = () => {
       <div className={styles.title}>
         <Modal>
           <div className={styles.header}>Registry - Coming Soon</div>
-          <div className={styles.info}>We are currently putting together our registry, check back soon for more information! In the mean time, if you feel in the giving spirit feel free to donate to some our favorite charities below.</div>
+          <div className={styles.info}>We are currently putting together our registry, check back soon for more information! In the mean time, if you feel in the giving spirit feel free to donate to some our favorite organizations below.</div>
         </Modal>
       </div>
       <div className={styles.row}>
