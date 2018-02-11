@@ -1,0 +1,19 @@
+.container {
+    padding: 90px 0;
+    max-width: 485px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.back {
+    width: 160px;
+    height: 50px;
+    background-color: #6B061F;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 88px;
+    font-family: 'Poiret One', arial;
+    font-size: 24px;
+}

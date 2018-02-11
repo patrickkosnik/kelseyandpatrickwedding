@@ -1,8 +1,19 @@
 .container {
+    position: fixed;
     margin: 0;
+    overflow: scroll;
     height: 100vh;
     width: 100%;
-    background-color: #163241;
+    background: url('http://kelseyandpatrickwedding.com/images/ann_arbor_bw.jpg');
+    background-size: cover;
+    background-position: right top;
+  }
+
+  .header {
+    color: #6B061F;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
   }
 
   .banner {

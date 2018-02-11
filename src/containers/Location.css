@@ -1,37 +1,65 @@
 .container {
+  position: fixed;
   margin: 0;
+  overflow: scroll;
   height: 100vh;
   width: 100%;
-  background: url('http://kelseyandpatrickwedding.com/images/ann_arbor_bw.jpg');
+  background: url('http://kelseyandpatrickwedding.com/images/big_house.png');
   background-size: cover;
+  background-position: right left;
+}
+
+.infoCard {
+  width: 33%;
+  min-width: 250px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.cardContent {
+  min-height: 280px;
+}
+
+.row {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #6B061F;
+  font-size: 48px;
+  padding: 20px 20px 0 20px;
+  margin-top: 20px;
+}
+
+.subheader {
+  color: #6B061F;
+  font-size: 36px;
+  padding: 20px 20px 0 20px;
+  margin-top: 20px;
 }
 
 .info {
-  padding-top: 100px;
-  text-align: center;
-}
-
-.info h2 {
-  padding-top: 25px;
-}
-
-.heading {
-  margin-bottom: 25px;
-  color: #fff;
-}
-
-.right {
-  display: inline-block;
-}
-
-.left {
-  vertical-align: top;
-  color: #fff;
-  font-family: 'Poiret One', arial;
-  display: inline-block;
-  height: 400px;
+  padding-left: 20px;
+  font-size: 20px;
+  padding-bottom: 16px;
 }
 
 .info a {
-  color: #fff;
+  color: #6B061F;
+}
+
+.info2 {
+  padding-left: 20px;
+  color: #6B061F;
+  font-size: 20px;
+}
+
+@media (max-width: 570px) {
+  .infoCard {
+    width: 100%;
+  }
 }

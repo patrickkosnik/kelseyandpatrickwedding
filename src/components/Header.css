@@ -1,9 +1,6 @@
 .container {
   margin: 0;
   padding: 0;
-  /*background-color: #05263f;*/
-  /*background-color: #481423*/
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,6 +9,7 @@
 
 .container li {
   display: inline-block;
+  border-bottom: 2px solid transparent;
 }
 
 .container li:hover {
@@ -30,6 +28,7 @@
 }
 
 .container ul {
+  margin: 0;
   padding: 0;
 }
 
