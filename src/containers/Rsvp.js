@@ -49,8 +49,9 @@ class Rsvp extends React.Component {
             <div className={styles.container}>
                 <Header light />
                 <Modal>
-                    <div className={styles.header}>RSVP</div>
-                    {!this.state.submitted ? 
+                    <div className={styles.header}>Online RSVP - Coming Soon!</div>
+                    <div className={styles.info}>Invitations are still waiting to be sent out, once they are sent out the ability to RSVP online will be made available!</div>
+                    {/* {!this.state.submitted ? 
                         <div className={styles.findInvHeader}>
                             <FindInvForm
                                 handleFirstChange={this.handleFirstChange}
@@ -59,19 +60,9 @@ class Rsvp extends React.Component {
                             />
                         </div> :
                         <FindInvError handleBack={this.handleBack}/> 
-                    }
+                    } */}
                 </Modal>
-                {/* <Modal>
-                <div className={styles.header}>RSVP</div>
-                {!this.state.submitted ? 
-                    <FindInvForm
-                        handleFirstChange={this.handleFirstChange}
-                        handleLastChange={this.handleLastChange}
-                        handleSubmit={this.handleSubmit}
-                    /> :
-                    <FindInvError handleBack={this.handleBack}/> 
-                }
-                </Modal>
+                {/* 
                 <div>{guests.guests.map(guest => 
                 <div>
                     First Name: {guest.firstName} <br />
