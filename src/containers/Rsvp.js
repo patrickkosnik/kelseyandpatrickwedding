@@ -49,6 +49,19 @@ class Rsvp extends React.Component {
             <div className={styles.container}>
                 <Header light />
                 <Modal>
+                    <div className={styles.header}>RSVP</div>
+                    {!this.state.submitted ? 
+                        <div className={styles.findInvHeader}>
+                            <FindInvForm
+                                handleFirstChange={this.handleFirstChange}
+                                handleLastChange={this.handleLastChange}
+                                handleSubmit={this.handleSubmit}
+                            />
+                        </div> :
+                        <FindInvError handleBack={this.handleBack}/> 
+                    }
+                </Modal>
+                {/* <Modal>
                 <div className={styles.header}>RSVP</div>
                 {!this.state.submitted ? 
                     <FindInvForm
@@ -71,7 +84,7 @@ class Rsvp extends React.Component {
                     }
                     <br /><br />
                 </div>)
-            }</div>
+            }</div> */}
             </div>
         )
     }
