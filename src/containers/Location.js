@@ -19,11 +19,13 @@ const Location = () => {
             <div className={styles.cardContent}>
               <div className={styles.subheader}>Ceremony</div>
               <div className={styles.info}>
-                Domino’s Farms <br />
+                Graduate Ann Arbor <br />
                 1:00 PM
               </div>
               <div className={styles.info2}>Address</div>
-              <div className={styles.info}>3001 Earhart Rd., Ann Arbor, MI </div>
+              <div className={styles.info}>615 East Huron Street Ann Arbor, MI 48104</div>
+              <div className={styles.info2}>Website</div>
+              <div className={styles.info}><a href="https://www.graduatehotels.com/ann-arbor/" target="blank">Graduate Ann Arbor</a></div>
             </div>
           </Modal>
         </div>
@@ -38,7 +40,7 @@ const Location = () => {
               <div className={styles.info2}>Address</div>
               <div className={styles.info}>3050 Jackson Rd. Ann Arbor, MI 48103</div>
               <div className={styles.info2}>Website</div>
-              <div className={styles.info}><a href="http://www.webersinn.com" target="blank">www.webersinn.com</a></div>
+              <div className={styles.info}><a href="http://www.webersinn.com" target="blank">Weber's Inn</a></div>
             </div>
           </Modal>
         </div>
