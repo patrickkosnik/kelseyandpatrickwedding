@@ -41,7 +41,11 @@ class Rsvp extends React.Component {
     }
     
     handleSubmit(event) {
-        const result = this.search(this.state.firstName.toLowerCase(), this.state.lastName.toLowerCase(), rsvps.rsvps)
+        const result = this.search(
+            this.state.firstName.toLowerCase().trim(), 
+            this.state.lastName.toLowerCase().trim(), 
+            rsvps.rsvps
+        )
         this.setState({submitted: true, result: result})
         event.preventDefault()
       }
