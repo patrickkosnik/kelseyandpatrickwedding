@@ -22,6 +22,20 @@
   color: #163241;
 }
 
+.rsvp {
+  margin-top: 50px;
+}
+.rsvp a {
+  text-decoration: none;
+}
+
+.rsvp span {
+  background-color: #6b061f;
+  color: #fff;
+  height:50px;
+  padding: 10px;
+}
+
 @media (min-width: 756px) {
   .app {
       background-position: 80% 10%;

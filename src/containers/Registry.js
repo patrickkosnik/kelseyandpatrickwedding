@@ -9,24 +9,24 @@ const Registry = () => {
       <Header light />
       <div className={styles.title}>
         <Modal>
-          <div className={styles.header}>Registry - Coming Soon</div>
-          <div className={styles.info}>We are currently putting together our registry, check back soon for more information!</div>
+          <div className={styles.header}>Registry</div>
+          <div className={styles.info}>Links to our registry information can be found below!</div>
         </Modal>
       </div>
       <div className={styles.row}>
         <div className={styles.infoCard}>
           <Modal>
             <div className={styles.cardContent}>
-              <div className={styles.subheader}>Registry Link Coming Soon</div>
-              <div className={styles.link}><a href="/">Check back later!</a></div>
+              <div className={styles.subheader}>Zola</div>
+              <div className={styles.link}><a href="https://www.zola.com/registry/kelseyandpatrickwedding" target="_blank">Click to visit registry</a></div>
             </div>
           </Modal>
         </div>
         <div className={styles.infoCard}>
           <Modal>
             <div className={styles.cardContent}>
-              <div className={styles.subheader}>Registry Link Coming Soon</div>
-              <div className={styles.link}><a href="/">Check back later!</a></div>
+              <div className={styles.subheader}>Target</div>
+              <div className={styles.link}><a href="http://tgt.gifts/kelseyandpatrickwedding" target="_blank">Click to visit registry</a></div>
             </div>
           </Modal>
         </div>

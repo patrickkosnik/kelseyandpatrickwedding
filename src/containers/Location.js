@@ -9,8 +9,8 @@ const Location = () => {
       <Header light />
       <div className={styles.title}>
         <Modal>
-          <div className={styles.header}>Ann Arbor, Michigan</div>
-          <div className={styles.info}>Celebrating where it all began! From working shifts at Bursley, tailgating before football games, eatling late night mac & cheese bites at the brown jug, we’ve had many wonderful adventures in this city. And we’re coming back to embark on one more big one. We cannot wait to share our special day with friends and family in a city that will always hold a special place in our hearts!</div>
+          <div className={styles.header}>Ann Arbor, Michigan</div><br />
+          {/* <div className={styles.info}>Celebrating where it all began! From working shifts at Bursley, tailgating before football games, eatling late night mac & cheese bites at the brown jug, we’ve had many wonderful adventures in this city. And we’re coming back to embark on one more big one. We cannot wait to share our special day with friends and family in a city that will always hold a special place in our hearts!</div> */}
         </Modal>
       </div>
       <div className={styles.row}>
