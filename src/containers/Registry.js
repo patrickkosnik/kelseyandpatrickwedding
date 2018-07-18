@@ -18,7 +18,11 @@ const Registry = () => {
           <Modal>
             <div className={styles.cardContent}>
               <div className={styles.subheader}>Zola</div>
-              <div className={styles.link}><a href="https://www.zola.com/registry/kelseyandpatrickwedding" target="_blank">Click to visit registry</a></div>
+              <div className={styles.link}>
+                <a href="https://www.zola.com/registry/kelseyandpatrickwedding" target="_blank">
+                  <span className={styles.btn}>Click to visit registry</span>
+                </a>
+              </div>
             </div>
           </Modal>
         </div>
@@ -26,7 +30,11 @@ const Registry = () => {
           <Modal>
             <div className={styles.cardContent}>
               <div className={styles.subheader}>Target</div>
-              <div className={styles.link}><a href="http://tgt.gifts/kelseyandpatrickwedding" target="_blank">Click to visit registry</a></div>
+              <div className={styles.link}>
+                <a href="http://tgt.gifts/kelseyandpatrickwedding" target="_blank">
+                  <span className={styles.btn}>Click to visit registry</span>
+                </a>
+              </div>
             </div>
           </Modal>
         </div>

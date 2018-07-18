@@ -2,10 +2,11 @@ import React from 'react'
 import Header from 'components/Header'
 import Modal from 'components/Modal'
 import FindInvForm from 'components/FindInvForm'
+import SelectRsvp from 'components/SelectRsvp'
 import FindInvError from 'components/FindInvError'
 import styles from './Rsvp.css'
 import rsvps from 'data/guests.json'
-
+import RsvpSuccess from 'components/RsvpSuccess'
 
 class Rsvp extends React.Component {
     constructor(props) {
@@ -13,14 +14,17 @@ class Rsvp extends React.Component {
         this.state = {
             firstName: '',
             lastName: '',
-            submitted: false
+            submitted: false,
+            checkboxes: []
         }
 
         this.handleFirstChange = this.handleFirstChange.bind(this)
         this.handleLastChange = this.handleLastChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleBack = this.handleBack.bind(this)
+        this.toggleCheckbox = this.toggleCheckbox.bind(this)
         this.search = this.search.bind(this)
+        this.fetchData = this.fetchData.bind(this)
     }
 
     handleFirstChange(event) {
@@ -46,9 +50,20 @@ class Rsvp extends React.Component {
             this.state.lastName.toLowerCase().trim(), 
             rsvps.rsvps
         )
-        this.setState({submitted: true, result: result})
+        const checkboxes = result ? result.guests.map(guest => 
+            ({label: guest.firstName.concat(' ', guest.lastName), checked: true})
+        ) : []
+        this.setState({submitted: true, result: result, checkboxes: checkboxes})
         event.preventDefault()
       }
+
+    toggleCheckbox(index) {
+        const {checkboxes} = this.state;
+        checkboxes[index].checked = !checkboxes[index].checked;
+        this.setState({
+            checkboxes
+        });
+    }
 
     search(firstName, lastName, myArray){
         for (var i=0; i < myArray.length; i++) {
@@ -61,6 +76,20 @@ class Rsvp extends React.Component {
         }
     }
 
+    fetchData(url, data){
+        fetch(url, {
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers:{
+                'Authorization': 'Bearer 8ebeea91b619bb35b906eace71d91040a6d975c0',
+                'Content-Type': 'application/json'
+            }
+        }).then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => console.log('Success:', response))
+        .then((response) => this.setState({apiSubmitted: true}))
+    }
+
     render () {
 
         return (
@@ -68,8 +97,7 @@ class Rsvp extends React.Component {
                 <Header light />
                 <Modal>
                     <div className={styles.header}>RSVP</div>
-                    <div className={styles.info}>Follow the instructions below to RSVP</div>
-                    {!this.state.submitted ? 
+                    {!this.state.submitted && !this.state.apiSubmitted ? 
                         <div className={styles.findInvHeader}>
                             <FindInvForm
                                 handleFirstChange={this.handleFirstChange}
@@ -77,20 +105,27 @@ class Rsvp extends React.Component {
                                 handleSubmit={this.handleSubmit}
                             />
                         </div> :
-                        <FindInvError result={this.state.result} handleBack={this.handleBack}/> 
+                        ''
                     }
+                    {this.state.result && this.state.submitted && !this.state.apiSubmitted ? 
+                    <SelectRsvp 
+                            result={this.state.result} 
+                            checkboxes={this.state.checkboxes}
+                            handleBack={this.handleBack} 
+                            fetchData={this.fetchData} 
+                            toggleCheckbox={this.toggleCheckbox}
+                            submitted={this.state.submitted}/> 
+                            : 
+                            ''
+                    }
+                    {this.state.submitted && this.state.checkboxes.length == 0 ?
+                    <FindInvError handleBack={this.handleBack} /> :
+                        ''
+                    }
+                    {this.state.apiSubmitted ? 
+                    <RsvpSuccess />
+                    : ''}
                 </Modal>
-              
-                {/* <div style={{backgroundColor:"#FFF"}}>{rsvps.rsvps.map(rsvp => 
-                <div key={rsvp.guests[0].firstName + rsvp.guests[0].lastName}>
-                    {rsvp.guests.map(guest =>
-                        <div key={guest.firstName + guest.LastName}>
-                        First Name: {guest.firstName} <br />
-                        Last Name: {guest.lastName}
-                        </div>
-                    )}
-                </div>)
-            }</div>  */}
             </div>
         )
     }

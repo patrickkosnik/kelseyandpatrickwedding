@@ -24,3 +24,18 @@
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+.return {
+    margin-bottom: 16px;
+}
+
+.return a {
+    text-decoration: none;
+}
+
+.return span {
+    background-color: #6b061f;
+    color: #fff;
+    height:50px;
+    padding: 10px;
+}

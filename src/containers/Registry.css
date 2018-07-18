@@ -10,15 +10,20 @@
   }
   
   .infoCard {
-    width: 33%;
+    width: calc(50% - 10px);
     min-width: 250px;
     padding: 0;
     margin: 0;
     display: inline-block;
     margin-right: 20px;
     vertical-align: top;
+    text-align: center;
   }
   
+  .infoCard:nth-child(2) {
+    margin-right: 0px;
+  }
+
   .cardContent {
     min-height: 280px;
   }
@@ -63,6 +68,13 @@
     padding-left: 20px;
     color: #6B061F;
     font-size: 20px;
+  }
+
+  .btn {
+    background-color: #6b061f;
+    color: #fff;
+    height:50px;
+    padding: 10px;
   }
   
   @media (max-width: 570px) {
