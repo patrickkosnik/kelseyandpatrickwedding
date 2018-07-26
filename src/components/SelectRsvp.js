@@ -5,7 +5,8 @@ const SelectRsvp = ({result, checkboxes, toggleCheckbox, fetchData, submitted}) 
     return (
         <div className={styles.container}>
             <div className={styles.message}>
-            Please check which guests will be attending. <br /><br />
+            Please check which guests will be attending. <br />
+            <span className={styles.description}>If no one is able to attend leave all names unchecked and click Submit.</span><br /><br />
                 <div className={styles.checkboxes}>
                     {checkboxes
                         .map((checkbox, index) =>

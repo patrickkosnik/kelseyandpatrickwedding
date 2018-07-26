@@ -51,3 +51,8 @@
 .checkboxes {
     margin-bottom: 16px;
 }
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+}

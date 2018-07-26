@@ -38,6 +38,7 @@
     font-size: 48px;
     padding: 20px 20px 0 20px;
     margin: 16px 0;
+    font-family: 'Poiret One', arial;
   }
   
   .subheader {
@@ -45,6 +46,7 @@
     font-size: 36px;
     padding: 20px 20px 0 20px;
     margin-top: 20px;
+    font-family: 'Poiret One', arial;
   }
   
   .info {
@@ -57,6 +59,7 @@
   .link {
     padding: 50px 20px 0 20px;
     font-size: 20px;
+    font-family: 'Poiret One', arial;
   }
   
   

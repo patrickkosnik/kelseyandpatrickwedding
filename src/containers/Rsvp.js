@@ -51,7 +51,7 @@ class Rsvp extends React.Component {
             rsvps.rsvps
         )
         const checkboxes = result ? result.guests.map(guest => 
-            ({label: guest.firstName.concat(' ', guest.lastName), checked: true})
+            ({label: guest.firstName.concat(' ', guest.lastName), checked: false})
         ) : []
         this.setState({submitted: true, result: result, checkboxes: checkboxes})
         event.preventDefault()
