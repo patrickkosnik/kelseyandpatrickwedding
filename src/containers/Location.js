@@ -66,17 +66,17 @@ const Location = () => {
           <Modal>
             <div className={styles.cardContent}>
               <div className={styles.subheader}>Accommodations</div>
-              <div className={styles.info2}><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=761&SWAQ=958P" target="blank">Sheraton - Ann Arbor</a></div>
-              <div className={styles.detail}>3200 Boardwalk Dr, Ann Arbor, MI 48108</div>
-              <div className={styles.info2}><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/ann-arbor/arbmi/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-ARBMI" target="blank">Holiday Inn Express & Suites Ann Arbor</a></div>
-              <div className={styles.detail}>600 Briarwood Cir, Ann Arbor, MI 48108</div>
-              <div className={styles.info2}><a href="https://www.ihg.com/holidayinn/hotels/us/en/ann-arbor/arbep/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-US-_-ARBEP" target="blank">Holiday Inn & Suites Ann Arbor</a></div>
-              <div className={styles.detail}>3155 Boardwalk Dr, Ann Arbor, MI 48108</div>
-              <div className={styles.info2}><a href="https://www.choicehotels.com/michigan/ann-arbor/comfort-inn-hotels/mi229?source=gyxt" target="blank">Comfort Inn & Suites University South</a></div>
-              <div className={styles.detail}>3501 S State St, Ann Arbor, MI 48108</div>
               <div className={styles.detail}>
-              It is a football weekend in Ann Arbor so we recommend you book sooner than later! Most recommended hotels are near Briarwood Mall just of the State St exit on I-94. Above are a few options, but there are also more in the same area.
+              It is a football weekend in Ann Arbor so we recommend you book sooner than later! Most recommended hotels are near Briarwood Mall just of the State St exit on I-94. Below are a few options, but there are also more in the same area.
               </div>
+              <div className={styles.info2}><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=761&SWAQ=958P" target="blank">Sheraton - Ann Arbor</a></div>
+              <div className={styles.info}>3200 Boardwalk Dr, Ann Arbor, MI 48108</div>
+              <div className={styles.info2}><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/ann-arbor/arbmi/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-ARBMI" target="blank">Holiday Inn Express & Suites Ann Arbor</a></div>
+              <div className={styles.info}>600 Briarwood Cir, Ann Arbor, MI 48108</div>
+              <div className={styles.info2}><a href="https://www.ihg.com/holidayinn/hotels/us/en/ann-arbor/arbep/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-US-_-ARBEP" target="blank">Holiday Inn & Suites Ann Arbor</a></div>
+              <div className={styles.info}>3155 Boardwalk Dr, Ann Arbor, MI 48108</div>
+              <div className={styles.info2}><a href="https://www.choicehotels.com/michigan/ann-arbor/comfort-inn-hotels/mi229?source=gyxt" target="blank">Comfort Inn & Suites University South</a></div>
+              <div className={styles.info}>3501 S State St, Ann Arbor, MI 48108</div>
             </div>
           </Modal>
         </div>
