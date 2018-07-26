@@ -29,12 +29,21 @@
 
 
 .cardContent {
-  min-height: 280px;
+  min-height: 300px;
 }
 
 .row {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.row2 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row2 .cardContent {
+  min-height: 350px;
 }
 
 .header {
@@ -50,7 +59,7 @@
   font-size: 36px;
   padding: 20px 20px 0 20px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: 'Poiret One', arial;
 }
 
@@ -59,7 +68,6 @@
   padding-right: 20px;
   font-size: 20px;
   padding-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -67,11 +75,22 @@
   color: #6B061F;
 }
 
+.info2 a {
+  color: #6B061F;
+}
 .info2 {
   padding-left: 20px;
   color: #6B061F;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.detail {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
 }
 
 @media (max-width: 570px) {
