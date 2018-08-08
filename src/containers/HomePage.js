@@ -9,9 +9,9 @@ const HomePage = () => {
       <Header />
       <h1 className={styles.header}>Kelsey &amp; Patrick</h1>
       <span className={styles.subHeader}>October 12th, 2018</span>
-      {/* <div className={styles.rsvp}>
+      <div className={styles.rsvp}>
       <NavLink to="/rsvp"><span>Click here to RSVP</span></NavLink>
-      </div> */}
+      </div>
     </div>
   )
 }
