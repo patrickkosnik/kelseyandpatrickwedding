@@ -50,13 +50,17 @@ const Location = () => {
           <Modal>
             <div className={styles.cardContent}>
               <div className={styles.subheader}>Parking Near Ceremony</div>
-              <div className={styles.info2}>Thomposon & Maynard Structure</div>
-              <div className={styles.info}>324 Maynard St, Ann Arbor, MI 48104</div>
+              <div className={styles.info2}>Vouchers For Parking</div>
+              <div className={styles.info}>If you park in the following structures you will be able to receive a voucher for parking. 
+              Upon entering the structure take a ticket from the machine. 
+              At the end of the ceremony you will receive a voucher. 
+              Hand both the ticket and voucher to the attendant when exiting the structure.</div>
               <div className={styles.info2}>Liberty Square Structure</div>
               <div className={styles.info}>510 E Washington St, Ann Arbor, MI 48104</div>
-              <div className={styles.info2}>4th & Washington Structure</div>
-              <div className={styles.info}>123 E Washington St, Ann Arbor, MI 48104</div>
-              <div className={styles.detail}>NOTE: There may also be street and metered parking on the nearby streets of the ceremony location.</div>
+              <div className={styles.info2}>Maynard & Thomposon Structure</div>
+              <div className={styles.info}>324 Maynard St, Ann Arbor, MI 48104</div>
+              <div className={styles.detail}>NOTE: There may also be street and metered parking on the nearby streets of the ceremony location. 
+              Parking will be available in the lot at Weber's for the Reception. </div>
               {/* <div className={styles.info2}>Website</div>
               <div className={styles.info}><a href="https://www.graduatehotels.com/ann-arbor/" target="blank">Graduate Ann Arbor</a></div> */}
             </div>

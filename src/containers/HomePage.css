@@ -23,9 +23,6 @@
   color: #163241;
 }
 
-.rsvp {
-  margin-top: 50px;
-}
 .rsvp a {
   text-decoration: none;
 }
@@ -35,6 +32,13 @@
   color: #fff;
   height:50px;
   padding: 10px;
+}
+
+.info {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: 756px) {

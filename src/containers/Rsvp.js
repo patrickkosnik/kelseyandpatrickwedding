@@ -100,12 +100,15 @@ class Rsvp extends React.Component {
                     <div className={styles.info}>Invitations are still waiting to be sent out, once they are sent out the ability to RSVP online will be made available!</div> */}
                     <div className={styles.header}>RSVP</div>
                     {!this.state.submitted && !this.state.apiSubmitted ? 
+                        <div>
+                        <strong className={styles.intro}>*Please RSVP no later than September 21st.</strong>
                         <div className={styles.findInvHeader}>
                             <FindInvForm
                                 handleFirstChange={this.handleFirstChange}
                                 handleLastChange={this.handleLastChange}
                                 handleSubmit={this.handleSubmit}
                             />
+                        </div>
                         </div> :
                         ''
                     }
