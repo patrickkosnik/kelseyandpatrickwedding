@@ -96,9 +96,9 @@ class Rsvp extends React.Component {
             <div className={styles.container}>
                 <Header light />
                 <Modal>
-                    {/* <div className={styles.header}>Online RSVP - Coming Soon!</div>
-                    <div className={styles.info}>Invitations are still waiting to be sent out, once they are sent out the ability to RSVP online will be made available!</div> */}
                     <div className={styles.header}>RSVP</div>
+                    <div className={styles.info}>All RSVPs have been received! We look forward to seeing everyone soon!</div>
+                    {/* <div className={styles.header}>RSVP</div>
                     {!this.state.submitted && !this.state.apiSubmitted ? 
                         <div>
                         <strong className={styles.intro}>*Please RSVP no later than September 14th.</strong>
@@ -129,7 +129,7 @@ class Rsvp extends React.Component {
                     }
                     {this.state.apiSubmitted ? 
                     <RsvpSuccess />
-                    : ''}
+                    : ''} */}
                 </Modal>
             </div>
         )
